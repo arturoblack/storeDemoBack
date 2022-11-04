@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Contexts\" />
+    <None Remove="Entities\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Entities\ReservasDb\" />
+    <None Remove="Entities\ReservasDb\tables\" />
+    <None Remove="Services\" />
+    <None Remove="Services\Products\" />
+    <None Remove="Services\Products\Dtos\" />
+    <None Remove="Services\Aurh\" />
+    <None Remove="Services\Authentication\" />
+    <None Remove="Services\Authentication\DTOS\" />
+    <None Remove="Helpers\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contexts\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Entities\ReservasDb\" />
+    <Folder Include="Entities\ReservasDb\tables\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Products\" />
+    <Folder Include="Services\Products\Dtos\" />
+    <Folder Include="Services\Auth\" />
+    <Folder Include="Services\Authentication\" />
+    <Folder Include="Services\Authentication\DTOS\" />
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
