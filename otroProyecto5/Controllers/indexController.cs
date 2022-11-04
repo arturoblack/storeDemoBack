@@ -16,7 +16,7 @@ namespace otroProyecto5.Controllers
         [Route("")]
         public ActionResult GetAllAsync()
         {
-            return Ok(new {page = "ok"});
+            return Ok(new {status = "ok"});
         }
     }
 }
